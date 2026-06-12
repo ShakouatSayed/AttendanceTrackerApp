@@ -3,7 +3,6 @@ import 'package:lotteryapp/provider/attendance_provider.dart';
 import 'package:lotteryapp/widget/summaryCircle.dart';
 import 'package:provider/provider.dart';
 
-// Implemented UI
 class SummaryScreen extends StatelessWidget {
   const SummaryScreen({super.key});
   @override

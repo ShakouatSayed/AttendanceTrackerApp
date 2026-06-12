@@ -3,7 +3,6 @@ import 'package:lotteryapp/provider/attendance_provider.dart';
 import 'package:lotteryapp/screen/summary_screen.dart';
 import 'package:provider/provider.dart';
 
-// Implemented UI
 class AttendanceScreen extends StatelessWidget {
   const AttendanceScreen({super.key});
   @override
