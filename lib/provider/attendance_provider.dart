@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lotteryapp/model/student.dart';
 
-// Finalized navigation logic
 class AttendanceProvider extends ChangeNotifier {
   final List<Student> students = [
     Student(name: "Student 01"),
