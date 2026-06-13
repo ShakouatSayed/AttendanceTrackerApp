@@ -37,7 +37,7 @@ class SummaryCircle extends StatelessWidget {
               CircularPercentIndicator(
                 radius: 70,
                 lineWidth: 15,
-                percent: percentage / 10,
+                percent: percentage / 100,
                 progressColor: progressColor,
                 backgroundColor: backgroundColor,
                 circularStrokeCap: CircularStrokeCap.round,
@@ -61,7 +61,7 @@ class SummaryCircle extends StatelessWidget {
                   ),
 
                   Text(
-                    "($percentage'0'%)",
+                    "($percentage%)",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ],

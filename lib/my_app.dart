@@ -1,5 +1,6 @@
+import 'package:AttendanceTrackerApp/screen/attendance_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:lotteryapp/screen/attendance_screen.dart';
+
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});

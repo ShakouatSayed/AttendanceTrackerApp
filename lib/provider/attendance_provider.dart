@@ -1,8 +1,8 @@
+import 'package:AttendanceTrackerApp/model/student.dart';
 import 'package:flutter/material.dart';
-import 'package:lotteryapp/model/student.dart';
 
 class AttendanceProvider extends ChangeNotifier {
-  final List<Student> students = [
+   List<Student> students = [
     Student(name: "Student 01"),
     Student(name: "Student 02"),
     Student(name: "Student 03"),

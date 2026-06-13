@@ -1,6 +1,7 @@
+import 'package:AttendanceTrackerApp/provider/attendance_provider.dart';
+import 'package:AttendanceTrackerApp/screen/summary_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:lotteryapp/provider/attendance_provider.dart';
-import 'package:lotteryapp/screen/summary_screen.dart';
+
 import 'package:provider/provider.dart';
 
 class AttendanceScreen extends StatelessWidget {
@@ -64,7 +65,7 @@ class AttendanceScreen extends StatelessWidget {
                     foregroundColor: Colors.white,
                   ),
                   onPressed: () {
-                    Navigator.push(
+                                        Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => SummaryScreen()),
                     );

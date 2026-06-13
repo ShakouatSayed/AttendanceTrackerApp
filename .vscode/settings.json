@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/Studio Project/AttendanceTrackerApp/linux/runner"
+    "cmake.sourceDirectory": "C:/Studio Project/AttendanceTrackerApp/linux/runner",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

@@ -1,6 +1,7 @@
+import 'package:AttendanceTrackerApp/provider/attendance_provider.dart';
+import 'package:AttendanceTrackerApp/widget/summaryCircle.dart';
 import 'package:flutter/material.dart';
-import 'package:lotteryapp/provider/attendance_provider.dart';
-import 'package:lotteryapp/widget/summaryCircle.dart';
+
 import 'package:provider/provider.dart';
 
 class SummaryScreen extends StatelessWidget {
@@ -8,7 +9,8 @@ class SummaryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<AttendanceProvider>(context);
-
+    final int presentPersent = provider.students.isEmpty ? 0 : ((provider.presnetCount) / (provider.students.length) * 100).round();
+    final int absentPersent = provider.students.isEmpty ? 0 : ((provider.absentCount) / (provider.students.length) * 100).round();
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -40,7 +42,7 @@ class SummaryScreen extends StatelessWidget {
                     title: "Present",
                     count:
                         "${provider.presnetCount}/${provider.students.length}",
-                    percentage: provider.presnetCount,
+                    percentage: presentPersent,
                     progressColor: const Color.fromARGB(255, 10, 136, 14),
                     backgroundColor: Colors.green.shade300,
                   ),
@@ -49,7 +51,7 @@ class SummaryScreen extends StatelessWidget {
                     title: "Absent",
                     count:
                         "${provider.absentCount}/${provider.students.length}",
-                    percentage: provider.absentCount,
+                    percentage: absentPersent,
                     progressColor: Colors.black,
                     backgroundColor: Colors.black38,
                   ),
